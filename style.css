@@ -128,6 +128,7 @@ button {
 /* -------media queries------- */
 @media only screen and (min-width: 585px) {
   main {
+    max-width: 800px;
     display: grid;
     grid-template-columns: 50%;
     grid-template-rows: 45% 55%;
