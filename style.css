@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  /* -------Primary------- */
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --section3: hsl(179, 47%, 52%);
+
+  /* -------Neutral------- */
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--lightGray);
+  font-family: "Karla";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.178);
+}
+
+.firstsection {
+  padding: 2rem 2rem 1.5rem 2rem;
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+}
+.secondsection {
+  color: white;
+  background-color: var(--cyan);
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+.thirdsection {
+  color: white;
+  background-color: var(--section3);
+  padding: 2rem 2rem 1.5rem 2rem;
+  border-radius: 0 0 8px 8px;
+}
+
+/* -------headings------- */
+h1 {
+  font-family: "Karla";
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: -0.04rem;
+}
+.firstsection h1 {
+  color: var(--cyan);
+}
+
+/* -------paragraphs------- */
+p {
+  margin-top: 1rem;
+}
+.firstsection p:first-of-type {
+  color: var(--brightYellow);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.firstsection p:last-of-type {
+  color: var(--grayishBlue);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+/* -------list------- */
+ul {
+  font-family: "Karla", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  list-style: none;
+  margin-top: 1rem;
+}
+li {
+  padding: 6px 0 0 0;
+}
+
+/* -------button------- */
+button {
+  width: 100%;
+  display: block;
+  margin: 30px auto 10px;
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  background-color: var(--brightYellow);
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.315);
+}
+
+span {
+  font-size: 2.2rem;
+  font-weight: 600;
+  position: relative;
+  top: 0.4rem;
+}
+
+/* -------media queries------- */
+@media only screen and (min-width: 740px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "head head"
+      "second third";
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.178);
+  }
+  .firstsection {
+    grid-area: head;
+    padding: 3rem 4rem 3rem 3rem;
+  }
+  .secondsection {
+    grid-area: second;
+    border-radius: 0 0 0 0.3rem;
+    padding: 3rem 4rem 3rem 3rem;
+  }
+  .thirdsection {
+    grid-area: third;
+    border-radius: 0 0 0.3rem;
+    padding: 3rem 2rem 3rem 3rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .firstsection p:last-of-type {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main .firstsection,
+  .secondsection,
+  .thirdsection {
+    padding: 2rem 1rem;
+  }
+}
+@media only screen and (max-width: 280px) {
+  main .firstsection,
+  .secondsection,
+  .thirdsection {
+    padding: 1.5rem 0.8rem;
+  }
+}
