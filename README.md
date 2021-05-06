@@ -28,5 +28,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@GeorgeAlexXenos](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@GeorgeAlexXenos](https://www.frontendmentor.io/profile/GeorgeAlexXenos)
